@@ -1,40 +1,16 @@
-### Gradle ###
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/**/build/
+# Ignore everything at the root level
+/*
 
-### IntelliJ IDEA ###
-.idea/
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/**/out/
+# Allow specific root-level files and folders
+!/src/
+!/gradle/
+!/gradlew.bat
+!/gradle.properties
+!/gradlew
+!modded_files_archive.tar.gz
+!archive_modded_files.sh
+!moddedfiles.txt
 
-.run/
-
-### Eclipse ###
-.apt_generated
-.classpath
-.eclipse/
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/**/bin/
-
-### VS Code ###
-.vscode/
-
-### Mac OS ###
-.DS_Store
-
-### Minecraft Modding ###
-run/
-!**/src/**/run/
-**/src/generated/**/.cache/
-repo/
-!**/src/**/repo/
+# Ensure Git looks inside the allowed folders to track their contents
+!/src/**
+!/gradle/**

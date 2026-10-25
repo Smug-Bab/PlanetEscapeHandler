@@ -2,7 +2,14 @@
   "required": true,
   "package": "com.sb.peh.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "PMWeatherFireMixin",
+    "PMWeatherBaseFireBlockMixin",
+    "PMWeatherSeasonMixin",
+    "PMWeatherWindMixin",
+    "PMWeatherThermoMixin",
+    "TfcAxeLoggingMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   },

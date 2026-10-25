@@ -4,13 +4,12 @@
 # Allow specific root-level files and folders
 !/src/
 !/gradle/
+!/decomp/
 !/gradlew.bat
 !/gradle.properties
 !/gradlew
-!modded_files_archive.tar.gz
-!archive_modded_files.sh
-!moddedfiles.txt
 
 # Ensure Git looks inside the allowed folders to track their contents
 !/src/**
 !/gradle/**
+/decomp/**

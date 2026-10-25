@@ -1,10 +1,12 @@
 # Ignore everything at the root level
 /*
+/decomp/*
 
 # Allow specific root-level files and folders
 !/src/
 !/gradle/
 !/decomp/
+!/decomp/dummy
 !/gradlew.bat
 !/gradle.properties
 !/gradlew
@@ -12,4 +14,3 @@
 # Ensure Git looks inside the allowed folders to track their contents
 !/src/**
 !/gradle/**
-/decomp/**

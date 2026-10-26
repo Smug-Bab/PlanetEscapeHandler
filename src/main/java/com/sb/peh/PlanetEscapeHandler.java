@@ -1,5 +1,6 @@
 package com.sb.peh;
 
+import com.sb.peh.compat.TreeFellingBlocker;
 import com.sb.peh.compat.SableCompat;
 import org.slf4j.Logger;
 
@@ -17,5 +18,6 @@ public class PlanetEscapeHandler {
     public PlanetEscapeHandler(IEventBus modEventBus, ModContainer modContainer) {
         LOGGER.info("PlanetEscapeHandler initializing compatibility layer");
         SableCompat.register();
+        TreeFellingBlocker.register(); 
     }
 }

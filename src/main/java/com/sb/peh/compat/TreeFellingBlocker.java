@@ -1,5 +1,6 @@
 package com.sb.peh.compat;
 
+import com.sb.peh.PlanetEscapeHandler;
 import ht.treechop.api.ChopEvent;
 import net.neoforged.neoforge.common.NeoForge;
 
@@ -16,9 +17,11 @@ public final class TreeFellingBlocker {
 
     public static void register() {
         NeoForge.EVENT_BUS.addListener(TreeFellingBlocker::onBeforeFell);
+        PlanetEscapeHandler.LOGGER.info("[felling] TreeChop BeforeFellEvent listener registered");
     }
 
     private static void onBeforeFell(ChopEvent.BeforeFellEvent event) {
         event.setCanceled(true);
+        PlanetEscapeHandler.LOGGER.info("[felling] Cancelled a TreeChop BeforeFellEvent");
     }
 }

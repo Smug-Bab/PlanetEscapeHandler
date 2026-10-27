@@ -80,6 +80,14 @@ config="${mod_id}.mixins.json"
 
 # Required compatibility dependencies
 [[dependencies.${mod_id}]]
+    modId="simpleblockphysics"
+    type="required"
+    versionRange="*"
+    ordering="AFTER"
+    side="BOTH"
+
+# Required compatibility dependencies
+[[dependencies.${mod_id}]]
     modId="treechop"
     type="required"
     versionRange="*"
@@ -97,6 +105,13 @@ config="${mod_id}.mixins.json"
 [[dependencies.${mod_id}]]
     modId="sable"
     type="required"
+    versionRange="*"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="sablecompanion"
+    type="optional"
     versionRange="*"
     ordering="AFTER"
     side="BOTH"

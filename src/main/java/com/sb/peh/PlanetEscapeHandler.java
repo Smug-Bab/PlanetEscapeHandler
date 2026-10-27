@@ -1,9 +1,6 @@
 package com.sb.peh;
 
-import com.sb.peh.compat.TreeFellingBlocker;
-import com.sb.peh.compat.SableCompat;
 import org.slf4j.Logger;
-
 import com.mojang.logging.LogUtils;
 
 import net.neoforged.bus.api.IEventBus;
@@ -16,8 +13,6 @@ public class PlanetEscapeHandler {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public PlanetEscapeHandler(IEventBus modEventBus, ModContainer modContainer) {
-        LOGGER.info("PlanetEscapeHandler initializing compatibility layer");
-        SableCompat.register();
-        TreeFellingBlocker.register(); 
+        LOGGER.info("PlanetEscapeHandler plugged in!");
     }
 }

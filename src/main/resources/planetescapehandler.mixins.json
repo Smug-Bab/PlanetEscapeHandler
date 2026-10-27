@@ -3,13 +3,12 @@
   "package": "com.sb.peh.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "TfcAxeLoggingMixin",
-    "PMWeatherFireMixin",
-    "PMWeatherBaseFireBlockMixin",
-    "PMWeatherSeasonMixin",
-    "PMWeatherWindMixin",
-    "PMWeatherThermoMixin"
+"PMCalendarMixin",
+"PMFireCompatMixin",
+"SBPhysicsCompatMixin",
+"TreeFellMixin"
   ],
+
   "injectors": {
     "defaultRequire": 1
   },

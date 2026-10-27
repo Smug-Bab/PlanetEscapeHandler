@@ -2,12 +2,16 @@
   "required": true,
   "package": "com.sb.peh.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [
-"PMCalendarMixin",
-"PMFireCompatMixin",
-"SBPhysicsCompatMixin",
-"TreeFellMixin"
-  ],
+"mixins": [
+    "PMCalendarMixin$WindMixin",
+    "PMCalendarMixin$SeasonMixin",
+    "PMCalendarMixin$ThermoMixin",
+    "PMFireCompatMixin$LevelFireMixin",
+    "PMFireCompatMixin$FireBlockGroundMixin",
+    "SBPhysicsCompatMixin$TickHandlerMixin",
+    "TreeFellMixin$TFCLoggingMixin",
+    "TreeFellMixin$TreeChopMixin"
+],
 
   "injectors": {
     "defaultRequire": 1
